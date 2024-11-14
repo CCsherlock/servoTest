@@ -1,0 +1,38 @@
+# Keil IDE generated files
+*.uvproj
+*.uvprojx
+*.uvopt
+*.uvoptx
+*.vscode/
+*.idea/
+
+# Build output files
+*.\obj/
+*.\bin/
+*.\axf/
+*.\elf/
+*.o
+*.a
+*.lib
+*.map
+*.d
+*.bak
+*.suo
+*.sdf
+*.log
+*.lst
+
+# Temporary files
+Thumb.db
+desktop.ini
+.DS_Store
+
+# Keil debug files
+*.dat
+*.pdb
+*.elf
+*.axf
+
+# Caches
+*.swp
+*.bak
