@@ -3,7 +3,7 @@
 <title>Static Call Graph - [servoTest\servoTest.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image servoTest\servoTest.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Thu Nov 14 13:35:52 2024
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Fri Dec 20 15:31:47 2024
 <BR><P>
 <H3>Maximum Stack Usage =        176 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -989,7 +989,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 <LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_WaitOnFlagUntilTimeout
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;moveServosByArray
+<BR>[Called By]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;moveServosByArray
 </UL>
 
 <P><STRONG><a name="[d5]"></a>HAL_UART_TxCpltCallback</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_hal_uart.o(i.HAL_UART_TxCpltCallback))
@@ -1058,11 +1058,11 @@ Global Symbols
 <P><STRONG><a name="[b]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_it.o(i.PendSV_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f401xc.o(RESET)
 </UL>
-<P><STRONG><a name="[e6]"></a>ProcessMessage</STRONG> (Thumb, 124 bytes, Stack size 16 bytes, infoprocess.o(i.ProcessMessage))
+<P><STRONG><a name="[e6]"></a>ProcessMessage</STRONG> (Thumb, 136 bytes, Stack size 16 bytes, infoprocess.o(i.ProcessMessage))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = ProcessMessage &rArr; moveServosByArray &rArr; HAL_UART_Transmit &rArr; UART_WaitOnFlagUntilTimeout
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;countOnes
-<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;moveServosByArray
+<BR>[Calls]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;countOnes
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;moveServosByArray
 <LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
@@ -1715,7 +1715,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f401xc.o(RESET)
 </UL>
-<P><STRONG><a name="[e7]"></a>countOnes</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, infoprocess.o(i.countOnes))
+<P><STRONG><a name="[e8]"></a>countOnes</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, infoprocess.o(i.countOnes))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = countOnes
 </UL>
 <BR>[Called By]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProcessMessage
@@ -1734,7 +1734,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
 
-<P><STRONG><a name="[e8]"></a>moveServosByArray</STRONG> (Thumb, 110 bytes, Stack size 16 bytes, lobotservocontroller.o(i.moveServosByArray))
+<P><STRONG><a name="[e7]"></a>moveServosByArray</STRONG> (Thumb, 110 bytes, Stack size 16 bytes, lobotservocontroller.o(i.moveServosByArray))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = moveServosByArray &rArr; HAL_UART_Transmit &rArr; UART_WaitOnFlagUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Transmit

@@ -30,6 +30,7 @@ void ProcessMessage()
 			myServo[i].ID = i;
 			myServo[i].Position = 1000;
 		}
+		moveServosByArray(myServo,14,100);
 		initFlag = 1;
 		return;
 	}
@@ -41,7 +42,7 @@ void ProcessMessage()
 		{
 			for (int i = 0; i < 14; i++) // 发送函数
 			{
-				if(receiveBuffer[0+i])
+				if(receiveBuffer[1+i])
 				{
 					myServo[i].Position = 500;
 				}
@@ -49,7 +50,7 @@ void ProcessMessage()
 				{
 					myServo[i].Position = 1000;
 				}
-			}
+			} 
 			moveServosByArray(myServo,14,100);
 		} 
 		else memset(receiveBuffer,0x00,sizeof(receiveBuffer));
